@@ -1,0 +1,17 @@
+<html>
+    <head>
+        Create a blog Post
+    </head>
+
+    <body>
+        <h1>Create a Post</h1>
+        <form action="" method="POST">
+        {% csrf_token %}
+        Title: <input type='text' name='title'/><br>
+        Author: <input type='text' name='author_name'/><br>
+        Body: <textarea name='content'></textarea><br>
+
+        <input type='submit' value='Post'/>
+        </form>
+    </body>
+</html>
