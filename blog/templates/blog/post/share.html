@@ -11,8 +11,8 @@ Share Post
     {% else %}
         <h1>Share "{{ post.title }}" by email</h1>
         <form method="POST">
+            {% csrf_token %}
             {{ form.as_p }}
-            {{% csfr_token %}}
             <input type="submit" value="Send e-mail">
         </form>
     {% endif %}
