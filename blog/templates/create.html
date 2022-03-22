@@ -1,15 +1,22 @@
+{% load static %}
 <html>
+
     <head>
         Create a blog Post
+        <link href="{% static 'css/create.css' %}" rel="stylesheet">
     </head>
 
     <body>
         <h1>Create a Post</h1>
         <form action="" method="POST">
         {% csrf_token %}
-        Title: <input type='text' name='title'/><br>
-        Author: <input type='text' name='author_name'/><br>
-        Body: <textarea name='content'></textarea><br>
+        <label>
+        <label class="form-label">Title:</label>        
+        <input type='text' name='title'/><br>
+        <label class="form-label">Author:</label>        
+        <input type='text' name='author_name' /><br>
+        <label class="form-label">Body:</label>        
+        <textarea name='content'></textarea><br>
 
         <input type='submit' value='Post'/>
         </form>

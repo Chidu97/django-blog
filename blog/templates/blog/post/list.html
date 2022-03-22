@@ -17,6 +17,10 @@
        </p>
        {{ post.body|truncatewords:30|linebreaks }}
      {% endfor %}
+
      {% include "blog/pagination.html" with page=posts %}
 
+     <a href={% url 'blog:createpost' %}>
+      <input type='submit' value='Add new Post'> 
+     </a>
    {% endblock body %}
