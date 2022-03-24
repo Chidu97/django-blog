@@ -13,11 +13,13 @@ label {
 }
 input, textarea { 
     clear:both;
-    margin:0 0 10px;
+    margin:0 20px 10px;
     background:#ededed;
     border:0;
-    padding:6px 70px;
+    width: 1050px;
+    padding: 6px;
     font-size:12px;
+    border-radius: 5px;
 }
 input[type=submit] {
     font-weight:bold;
@@ -27,4 +29,6 @@ input[type=submit] {
     font-size:14px;
     text-transform:uppercase; 
     margin: 20px 0;
+    width: 80px;
+    cursor: pointer;
 }
